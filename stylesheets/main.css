@@ -1,4 +1,5 @@
 :root {
+  --unused: hello;
   --base-color: #ccc;
   --base-border: #ccc;
   --base-contrast: #000;
