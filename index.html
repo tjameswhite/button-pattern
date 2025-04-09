@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Button Test File</title>
+
+    <meta name="author" content="Tim White" />
+    <meta name="copyright" content="2025" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css" />
+    <style>
+      
+    </style>
+</head>
+
+<body>
+    <h1>Button Test File</h1>
+
+    <table class="button-samples table-borders">
+        <tbody>
+            <tr>
+                <th>Out of the box controls, normalized across browsers</th>
+            </tr>
+            <tr>
+                <th>Use</th>
+                <th>Normal</th>
+                <th>Disabled</th>
+            </tr>
+            <tr>
+                <td><code>&lt;button&gt;</code></td>
+                <td><button>Button</button></td>
+                <td><button disabled>Disabled</button></td>
+            </tr>
+            <tr>
+                <td><code>&lt;a href="#"&gt;</code></td>
+                <td><a href="#">Link</a></td>
+                <td>n/a</td>
+            </tr>
+            <tr>
+                <td><code>&lt;input type=""&gt;</code></td>
+                <td><input type="none"></td>
+                <td><input type="none" disabled></td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="button-samples table-borders">
+        <tbody>
+            <tr>
+                <th>Basic <code>.button</code> Use</th>
+            </tr>
+            <tr>
+                <th>Code</th>
+                <th><code>.button</code></th>
+                <th><code>.button--reverse</code></th>
+                <th><code>disabled</code></th>
+            </tr>
+            <tr>
+                <td><code>&lt;button class="button"&gt;</code></td>
+                <td><button class="button">Button</button></td>
+                <td><button class="button button--reverse">Button</button></td>
+                <td><button class="button" disabled>Button</button></td>
+            </tr>
+            <tr>
+                <td><code>&lt;a href="#" class="button"&gt;</code></td>
+                <td><a href="#" class="button">Link</a></td>
+                <td><a href="#" class="button button--reverse">Link</a></td>
+                <td><a href="#" class="button" disabled>Link</a></td>
+            </tr>
+            <tr>
+                <td><code>&lt;input type="submit"&gt;</code></td>
+                <td><input type="submit"></td>
+                <td><input type="submit" class="button--reverse"></td>
+                <td><input type="submit" disabled></td>
+            </tr>
+        </tbody>
+        <tbody>
+           <tr>
+               <th>Optional classes</th>
+           </tr>
+            <tr>
+                <td><code>&lt;button class="button button--primary"&gt;</code></td>
+                <td><button class="button button--primary">Button Primary</button></td>
+                <td><button class="button button--primary button--reverse">Button Primary</button></td>
+                <td><button class="button button--primary button--reverse" disabled>Button Primary</button></td>
+            </tr>
+            <tr>
+                <td><code>&lt;button class="button button--secondary"&gt;</code></td>
+                <td><button class="button button--secondary">Button Secondary</button></td>
+                <td><button class="button button--secondary button--reverse">Button Secondary</button></td>
+                <td><button class="button button--secondary button--reverse" disabled>Button Secondary</button></td>
+            </tr>
+            <tr>
+                <td><code>&lt;button class="button button--success"&gt;</code></td>
+                <td><button class="button button--success">Button Success</button></td>
+                <td><button class="button button--success button--reverse">Button Success</button></td>
+                <td><button class="button button--success button--reverse" disabled>Button Success</button></td>
+            </tr>
+            <tr>
+                <td><code>&lt;button class="button button--danger"&gt;</code></td>
+                <td><button class="button button--danger">Button Danger</button></td>
+                <td><button class="button button--danger button--reverse">Button Danger</button></td>
+                <td><button class="button button--danger button--reverse" disabled>Button Danger</button></td>
+            </tr>
+            <tr>
+                <td><code>&lt;button class="button button--warning"&gt;</code></td>
+                <td><button class="button button--warning">Button Warning</button></td>
+                <td><button class="button button--warning button--reverse">Button Warning</button></td>
+                <td><button class="button button--warning button--reverse" disabled>Button Warning</button></td>
+            </tr>
+            <tr>
+                <td><code>&lt;button class="button button--small"&gt;</code></td>
+                <td><button class="button button--small">Button Small</button></td>
+                <td><button class="button button--small button--reverse">Button Small</button></td>
+                <td><button class="button button--small button--reverse" disabled>Button Small</button></td>
+            </tr>
+            <tr>
+                <td><code>&lt;button class="button button--large"&gt;</code></td>
+                <td><button class="button button--large">Button Large</button></td>
+                <td><button class="button button--large button--reverse">Button Large</button></td>
+                <td><button class="button button--large button--reverse" disabled>Button Large</button></td>
+            </tr>
+            <tr>
+                <td rowspan="3"><code>&lt;button class="button button--full-width"&gt;</code></td>
+                <td colspan="3"><button class="button button--full-width">Button Full-width</button></td>
+            </tr>
+                <tr>
+                    <td colspan="3"><button class="button button--full-width button--reverse">Button Full-width</button></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><button class="button button--full-width button--reverse" disabled>Button Full-width</button></td>
+                </tr>
+            <tr>
+                <td><code>&lt;button class="button button--tag"&gt;</code></td>
+                <td><button class="button button--tag">Button Tag</button></td>
+                <td><button class="button button--tag button--reverse">Button Tag</button></td>
+                <td><button class="button button--tag button--reverse" disabled>Button Tag</button></td>
+            </tr>
+            <tr>
+                <td><code>&lt;button class="button button--animate"&gt;</code></td>
+                <td><button class="button button--animate">Button Animate</button></td>
+                <td><button class="button button--animate button--reverse">Button Animate</button></td>
+                <td><button class="button button--animate button--reverse" disabled>Button Animate</button></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

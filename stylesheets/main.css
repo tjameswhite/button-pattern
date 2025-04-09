@@ -1,0 +1,332 @@
+:root {
+  --base-color: #ccc;
+  --base-border: #ccc;
+  --base-contrast: #000;
+  --primary-color: #345678;
+  --primary-border: #345678;
+  --primary-contrast: #fff;
+  --secondary-color: #f42e54;
+  --secondary-border: #f42e54;
+  --secondary-contrast: #000;
+  --success-color: #64A933;
+  --success-border: #64A933;
+  --success-contrast: #000;
+  --warning-color: #E6BB0E;
+  --warning-border: #E6BB0E;
+  --warning-contrast: #000;
+  --danger-color: #E74C3C;
+  --danger-border: #E74C3C;
+  --danger-contrast: #000;
+}
+
+body {
+  font: medium helvetica;
+}
+
+.button-samples {
+  margin: 1rem 0;
+  border-collapse: collapse;
+}
+
+.button-samples th,
+.button-samples td {
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.table-borders td {
+  border: 1px solid #777;
+}
+
+/* Buttons */
+a.button {
+  text-decoration: none !important;
+}
+
+a.button,
+.button,
+input[type=submit],
+input[type=reset],
+input[type=button] {
+  background-clip: padding-box;
+  background-color: var(--base-color);
+  border: 1px solid;
+  border-color: var(--base-border);
+  border-radius: 4px;
+  color: var(--base-contrast);
+  cursor: pointer;
+  display: inline-block;
+  font-family: arial;
+  font-size: 12px;
+  letter-spacing: 3px;
+  line-height: normal;
+  padding: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 300ms;
+  vertical-align: middle;
+}
+a.button:active, a.button:focus,
+.button:active,
+.button:focus,
+input[type=submit]:active,
+input[type=submit]:focus,
+input[type=reset]:active,
+input[type=reset]:focus,
+input[type=button]:active,
+input[type=button]:focus {
+  outline: none;
+  box-shadow: inset 0 0 6px 1px #444;
+}
+a.button.disabled, a.button.button-disabled, a.button[disabled],
+.button.disabled,
+.button.button-disabled,
+.button[disabled],
+input[type=submit].disabled,
+input[type=submit].button-disabled,
+input[type=submit][disabled],
+input[type=reset].disabled,
+input[type=reset].button-disabled,
+input[type=reset][disabled],
+input[type=button].disabled,
+input[type=button].button-disabled,
+input[type=button][disabled] {
+  pointer-events: none;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+a.button:hover, a.button:focus, a.button:active,
+.button:hover,
+.button:focus,
+.button:active,
+input[type=submit]:hover,
+input[type=submit]:focus,
+input[type=submit]:active,
+input[type=reset]:hover,
+input[type=reset]:focus,
+input[type=reset]:active,
+input[type=button]:hover,
+input[type=button]:focus,
+input[type=button]:active {
+  background-color: var(--base-contrast);
+  color: var(--base-color);
+}
+a.button.button--reverse,
+.button.button--reverse,
+input[type=submit].button--reverse,
+input[type=reset].button--reverse,
+input[type=button].button--reverse {
+  background-color: var(--base-contrast);
+  color: var(--base-color);
+}
+a.button.button--reverse:hover, a.button.button--reverse:focus, a.button.button--reverse:active,
+.button.button--reverse:hover,
+.button.button--reverse:focus,
+.button.button--reverse:active,
+input[type=submit].button--reverse:hover,
+input[type=submit].button--reverse:focus,
+input[type=submit].button--reverse:active,
+input[type=reset].button--reverse:hover,
+input[type=reset].button--reverse:focus,
+input[type=reset].button--reverse:active,
+input[type=button].button--reverse:hover,
+input[type=button].button--reverse:focus,
+input[type=button].button--reverse:active {
+  background-color: var(--base-color);
+  color: var(--base-contrast);
+} 
+
+.button--full-width {
+  width: 100%;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  text-align: center;
+}
+
+.button--small {
+  font-size: 12px;
+  text-transform: none;
+  padding: 4px 8px;
+}
+
+.button--large {
+  font-size: 18px;
+  padding: 8px 16px;
+}
+
+.button--primary {
+  border-color: var(--primary-border);
+  background-color: var(--primary-color);
+  color: var(--primary-contrast);
+}
+.button--primary:hover, .button--primary:focus, .button--primary:active {
+  background-color: var(--primary-contrast);
+  color: var(--primary-color);
+}
+.button--primary.button--reverse {
+  background-color: var(--primary-contrast);
+  color: var(--primary-color);
+}
+.button--primary.button--reverse:hover, .button--primary.button--reverse:focus, .button--primary.button--reverse:active {
+  background-color: var(--primary-color);
+  color: var(--primary-contrast);
+}
+
+.button--secondary {
+  border-color: var(--secondary-border);
+  background-color: var(--secondary-color);
+  color: var(--secondary-contrast);
+}
+.button--secondary:hover, .button--secondary:focus, .button--secondary:active {
+  background-color: var(--secondary-contrast);
+  color: var(--secondary-color);
+}
+
+.button--secondary.button--reverse {
+  background-color: var(--secondary-contrast);
+  color: var(--secondary-color);
+}
+.button--secondary.button--reverse:hover, .button--secondary.button--reverse:focus, .button--secondary.button--reverse:active {
+  background-color: var(--secondary-color);
+  color: var(--secondary-contrast);
+}
+
+.button--success {
+  border-color: var(--success-border);
+  background-color: var(--success-color);
+  color: var(--success-contrast);
+}
+.button--success:hover, .button--success:focus, .button--success:active {
+  background-color: var(--success-contrast);
+  color: var(--success-color);
+}
+.button--success.button--reverse {
+  background-color: var(--success-contrast);
+  color: var(--success-color);
+}
+.button--success.button--reverse:hover, .button--success.button--reverse:focus, .button--success.button--reverse:active {
+  background-color: var(--success-color);
+  color: var(--success-contrast);
+}
+
+.button--warning {
+  border-color: var(--warning-border);
+  background-color: var(--warning-color);
+  color: var(--warning-contrast);
+}
+.button--warning:hover, .button--warning:focus, .button--warning:active {
+  background-color: var(--warning-contrast);
+  color: var(--warning-color);
+}
+.button--warning.button--reverse {
+  background-color: var(--warning-contrast);
+  color: var(--warning-color);
+}
+.button--warning.button--reverse:hover, .button--warning.button--reverse:focus, .button--warning.button--reverse:active {
+  background-color: var(--warning-color);
+  color: var(--warning-contrast);
+}
+
+.button--danger {
+  border-color: var(--danger-border);
+  background-color: var(--danger-color);
+  color: var(--danger-contrast);
+}
+.button--danger:hover, .button--danger:focus, .button--danger:active {
+  background-color: var(--danger-contrast);
+  color: var(--danger-color);
+}
+.button--danger.button--reverse {
+  background-color: var(--danger-contrast);
+  color: var(--danger-color);
+}
+.button--danger.button--reverse:hover, .button--danger.button--reverse:focus, .button--danger.button--reverse:active {
+  background-color: var(--danger-color);
+  color: var(--danger-contrast);
+}
+
+.button--tag {
+  border-style: dashed;
+  /* border-color: #ccc;
+  background-color: #ccc;
+  color: #000; */
+}
+
+.button--tag:hover, .button--tag:focus, .button--tag:active {
+  /* background-color: #000;
+  color: #ccc; */
+}
+
+.button--tag.button--reverse {
+  /* background-color: #000;
+  color: #ccc; */
+}
+
+.button--tag.button--reverse:hover, .button--tag.button--reverse:focus, .button--tag.button--reverse:active {
+  /* background-color: #ccc;
+  color: #000; */
+}
+
+.button--animate {
+  backface-visibility: hidden;
+  box-shadow: 0 0 1px #000;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  position: relative;
+  transform: translateZ(0);
+  transition-duration: 0.3s;
+  transition-property: color;
+}
+
+.button--animate:before {
+  width: 50px;
+  height: 50px;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  margin-top: -25px;
+  margin-left: -25px;
+  background-color: #f3f3f3;
+  border-radius: 100%;
+  transform: scale(0);
+  transition-property: transform;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in;
+}
+
+.button--animate:hover,
+.button--animate:focus,
+.button--animate:active {
+  border-color: #444;
+  color: #888 !important;
+}
+
+.button--animate:hover:before,
+.button--animate:focus:before,
+.button--animate:active:before {
+  transform: scale(10);
+}
+.button--full-width .button--animate:hover:before,
+.button--full-width .button--animate:focus:before,
+.button--full-width .button--animate:active:before {
+  transform: scale(30);
+}
+
+button + .button {
+  margin-left: 10px;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.button-none {
+  border: 0;
+  cursor: pointer;
+}
