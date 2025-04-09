@@ -1,5 +1,4 @@
 :root {
-  --unused: hello;
   --base-color: #ccc;
   --base-border: #ccc;
   --base-contrast: #000;
@@ -248,24 +247,6 @@ input[type=button].button--reverse:active {
 
 .button--tag {
   border-style: dashed;
-  /* border-color: #ccc;
-  background-color: #ccc;
-  color: #000; */
-}
-
-.button--tag:hover, .button--tag:focus, .button--tag:active {
-  /* background-color: #000;
-  color: #ccc; */
-}
-
-.button--tag.button--reverse {
-  /* background-color: #000;
-  color: #ccc; */
-}
-
-.button--tag.button--reverse:hover, .button--tag.button--reverse:focus, .button--tag.button--reverse:active {
-  /* background-color: #ccc;
-  color: #000; */
 }
 
 .button--animate {
